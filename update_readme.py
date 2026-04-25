@@ -1,7 +1,7 @@
-import requests
+#import requests
 import os
 
-def get_quote():
+#def get_quote():
     # Usando uma API pública de citações (ZenQuotes)
     response = requests.get("https://zenquotes.io/api/random")
     json_data = response.json()
@@ -36,6 +36,6 @@ def update_readme(quote):
         file.write(new_content)
     print("README atualizado com sucesso!")
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     quote = get_quote()
     update_readme(quote)
